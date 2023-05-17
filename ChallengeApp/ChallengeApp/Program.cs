@@ -1,25 +1,20 @@
 ﻿string name = "Ewa";
-string sex1 = "kobieta";
-string sex2 = "mężczyzna";
+string sex = "kobieta";
 int age1 = 25;
-int age2 = 17;
-if (sex1 == "kobieta" && age1 == 30)
+int age2 = 33;
+if (sex == "kobieta" && age1 < 30)
 {
     Console.WriteLine("Kobieta poniżej 30 lat");
 }
-else if (name == "Ewa" && age1 < 33)
+else
+{
+    Console.WriteLine("Kobieta powyżej 30 lat.");
+}
+if (name == "Ewa" && age2 == 33)
 {
     Console.WriteLine("Ewa, lat 33.");
 }
-else
-{
-    Console.WriteLine("Ewa, lat 40.");
-}
-if (age2 == 18 && sex2 == "mężczyzna") 
-{
-    Console.WriteLine("Pełnoletni mężczyzna.");
-}
-else if (age2 > 15)
+else if (sex == "mężczyzna" && age1 > 18)
 {
     Console.WriteLine("Niepełnoletni mężczyzna");
 }
